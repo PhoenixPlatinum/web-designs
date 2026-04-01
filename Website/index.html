@@ -110,6 +110,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 22px 0;
+      gap: 20px;
     }
 
     .nav-logo {
@@ -117,6 +118,7 @@
       font-weight: 700;
       letter-spacing: -0.03em;
       color: #fff;
+      white-space: nowrap;
     }
 
     .nav-links {
@@ -124,6 +126,8 @@
       display: flex;
       align-items: center;
       gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .nav-links a {
@@ -134,6 +138,14 @@
 
     .nav-links a:hover {
       color: #fff;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     .nav-cta {
@@ -148,6 +160,7 @@
       font-weight: 500;
       color: #fff;
       transition: var(--transition);
+      white-space: nowrap;
     }
 
     .nav-cta:hover {
@@ -805,6 +818,11 @@
       .timeline-item {
         grid-template-columns: 1fr;
       }
+
+      .nav-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
 
     @media (max-width: 760px) {
@@ -872,7 +890,10 @@
         <li><a href="#contacto">Contacto</a></li>
       </ul>
 
-      <a class="nav-cta" href="mailto:di.silva1520@gmail.com">Contactar</a>
+      <div class="nav-actions">
+        <a class="nav-cta" href="https://www.behance.net/diogoafonsosilva" target="_blank" rel="noopener">Behance</a>
+        <a class="nav-cta" href="mailto:di.silva1520@gmail.com">Contactar</a>
+      </div>
     </div>
   </nav>
 
@@ -1158,6 +1179,7 @@
         <div class="contact-actions">
           <a class="btn-primary" href="mailto:di.silva1520@gmail.com">Enviar email</a>
           <a class="btn-secondary" href="https://linkedin.com/in/diogoafonsosilva" target="_blank" rel="noopener">Ver LinkedIn</a>
+          <a class="btn-secondary" href="https://www.behance.net/diogoafonsosilva" target="_blank" rel="noopener">Ver Behance</a>
         </div>
       </div>
     </div>
